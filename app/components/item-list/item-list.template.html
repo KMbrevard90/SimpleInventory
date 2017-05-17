@@ -1,0 +1,46 @@
+<div class="container-fluid">
+
+
+  <div class="col-md-2 side-bar">
+    <p>
+      Search:
+      <input type="text" ng-model="$ctrl.search"/>
+    </p>
+
+    <p>
+      Sort by:
+      <select ng-model="$ctrl.orderByChoice">
+        <option value="name">Alphabetical</option>
+        <option value="value">Value</option>
+      </select>
+    </p>
+
+    <p>
+      Category:
+      <select ng-model="$ctrl.category">
+        <option value="appliance">Appliances</option>
+        <option value="electronic">Electronics</option>
+        <option value="furniture">Furniture</option>
+        <option value="misc">Miscallaneous</option>
+      </select>
+    </p>
+  </div>
+
+  <div class="col-md-8">
+    <ul class="items">
+      <li ng-repeat="item in $ctrl.items | filter: $ctrl.search | filter: $ctrl.category | orderBy: $ctrl.orderByChoice"
+      class="thumbnail list-item">
+        <a href="#!/items/{{item.id}}" class="thumb">
+          <img ng-src="{{item.imageUrl}}" alt="{{item.name}}" />
+        </a>
+        <a href="#!/items/{{item.id}}">{{item.name}}</a>
+        <p>{{item.description}}</p>
+      </li>
+
+    </ul>
+  </div>
+  <div class="col-md-2 right-side-bar">
+    <button type="button" name="addItem">Add Item</button>
+  </div>
+
+</div>

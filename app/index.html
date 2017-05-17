@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="simpleInventory" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Simple Inventory</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body id="main">
+  <header>
+    <nav class="navbar navbar-light navbar-fixed-top" id="navbar" style="background-color: #56A0D3;">
+      <ul class="nav navbar-nav pull-xs-right">
+        <li class="nav-item">
+            <a class="nav-link" href="#!/items"><span class="nav-item-text">Home</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#wedding-party"><span class="nav-item-text">Settings</span></a>
+        </li>
+    </ul>
+    </nav>
+  </header>
+  <section id="item-section">
+    <div ng-view></div>
+  </section>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="components/item-list/item-list.module.js"></script>
+  <script src="components/item-list/item-list.component.js"></script>
+</body>
+</html>

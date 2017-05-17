@@ -1,0 +1,29 @@
+[
+  {
+    "id" : "1234",
+    "name": "Television",
+    "category": "Electronic",
+    "count": 1,
+    "value": 800,
+    "description": "47 inch LG Smart Television.",
+    "imageUrl": "images/g68965W7-F.jpg"
+  },
+  {
+    "id" : "1235",
+    "name": "Xbox",
+    "category": "Electronic",
+    "count": 1,
+    "value": 400,
+    "description": "Xbox one gaming console.",
+    "imageUrl": "images/xbox.jpg"
+  },
+  {
+    "id" : "1236",
+    "name": "Wii U",
+    "category": "Electronic",
+    "count": 1,
+    "value": 300,
+    "description": "Wii U gaming console.",
+    "imageUrl": "images/wiiU.jpg"
+  }
+]

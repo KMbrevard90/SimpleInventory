@@ -1,0 +1,34 @@
+body {
+  padding: 20px;
+}
+
+.side-bar {
+  margin-top: 50px;
+}
+
+.right-side-bar {
+  margin-top: 50px;
+}
+
+.items {
+  margin-top: 50px;
+}
+
+.items li {
+  clear: both;
+  height: 150px;
+  padding-top: 15px;
+}
+
+.items li a {
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.thumb {
+  float: right;
+  height: 125px;
+  margin: -0.5em 1em 1.5em 0;
+  padding-top: .5em;
+  width: 200px;
+}
